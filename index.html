@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="title">Customer Satisfaction Survey</h1>
+        <p id="description">We want to know whats on your mind on this!</p>
+        <p id="description">Please fill out this short survey so we can know where to improve!</p>
+        <form id="survey-form">
+            <div class="form-group">
+                <!--for the name-->
+                <label id="name-label" for="name">Name: </label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <!--for the email-->
+                <label id="email-label" for="email">Email: </label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <!--for the age-->
+                <label id="age-label" for="age">Age(18-99): </label>
+                <input type="number" id="age" name="age" min="18" max="99" placeholder="Enter your age" required>
+            </div>
+            <div class="form-group">
+                <!--dropdown part-->
+                <label for="dropdown">How did you hear about us?</label>
+                <select name="dropdown" id="dropdown">
+                    <option value="internet">Internet</option>
+                    <option value="friends">Friends or Family</option>
+                    <option value="advertisement">Advertisement</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <!--radiobutton part-->
+                <label for="">Are you satisfied with our service?</label>
+                <label for=""><input type="radio" name="satisfaction" value="very-satisfied">Very Satisfied</label>
+                <label for=""><input type="radio" name="satisfaction" value="satisfied">Satisfied</label>
+                <label for=""><input type="radio" name="satisfaction" value="neutral">Neutral</label>
+                <label for=""><input type="radio" name="satisfaction" value="dissatisfied">Dissatisfied</label>
+            </div>
+            <div class="form-group">
+                <!--checkbox part-->
+                <label for="">Which features did you use?</label>
+                <label for=""><input type="checkbox" name="features" value="website">Website</label>
+                <label for=""><input type="checkbox" name="features" value="mobile-app">Mobile App</label>
+                <label for=""><input type="checkbox" name="features" value="customer-support">Customer Support</label>
+            </div>
+            <div class="form-group">
+                <!--for commentaries-->
+                <label for="comments">Any additional comments?</label>
+                <textarea name="comments" id="comments" placeholder="Enter your comments here"></textarea>
+            </div>
+            <div class="form-group">
+                <button id="submit" type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
